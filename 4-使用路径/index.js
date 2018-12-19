@@ -1,0 +1,1 @@
+console.log('__dirname', __dirname, '__filename', __filename);
