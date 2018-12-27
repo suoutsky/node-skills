@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/suoutsky/node-skills/issues"
   },
-  "homepage": "https://github.com/suoutsky/node-skills#readme"
+  "homepage": "https://github.com/suoutsky/node-skills#readme",
+  "dependencies": {
+    "connect": "^3.6.6"
+  }
 }
