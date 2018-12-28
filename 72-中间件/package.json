@@ -1,0 +1,9 @@
+{
+  "name": "",
+  "version": "",
+  "dependencies": {
+    "express": "^4.16.4",
+    "fast-xml-parser": "^3.12.11",
+    "validate": "^4.5.1"
+  }
+}

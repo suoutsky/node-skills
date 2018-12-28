@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>webscoket</title>
+</head>
+<body>
+    <h1>webscoket<h1>
+    <div id="message"></div><br>
+    <script>
+      var host = window.document.location.host.replace(/:.*/, '');
+      var ws = new WebSocket('ws://' + host + ':3000');
+      setInterval(function() {
+          ws.send(JSON.stringify({'type': 'getSession'}));
+      }, 1000);
+      ws.onmessage = function(event) {
+          document.getElementById('message').innerHTML = event.data;
+      }
+    </script>
+</body>
+</html>
