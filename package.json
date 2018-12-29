@@ -18,5 +18,8 @@
   "homepage": "https://github.com/suoutsky/node-skills#readme",
   "dependencies": {
     "connect": "^3.6.6"
+  },
+  "devDependencies": {
+    "heapdump": "^0.3.12"
   }
 }
