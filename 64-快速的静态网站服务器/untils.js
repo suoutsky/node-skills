@@ -1,4 +1,4 @@
-exports.m ""getIPAdress = function() {
+exports.getIPAdress = function() {
     var interfaces = require('os').networkInterfaces();
     for (var devName in interfaces) {
       var iface = interfaces[devName];
